@@ -86,4 +86,5 @@ resetBtn.addEventListener('click', () => {
     domHours.value = "";
     displayTimer.textContent = '00:00:00';
     startStopBtn.textContent = 'Start';
+    endMessage.textContent = '';
 });
