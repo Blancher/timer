@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+}
+
+body {
+    background: linear-gradient(rgb(151, 81, 81), rgb(29, 53, 29));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    position: relative;
+    margin-top: -10px;
+    font-family: 'Balsamiq Sans';
+}
+
+.container {
+    width: 40%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+    margin: 10% auto;
+}
+
+form {
+    width: 325.1px;
+    margin: 0 auto;
+}
+
+input {
+    width: 50px;
+}
+
+#timer {
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: -20px auto;
+    padding: 35px;
+}
+
+#submit {
+    margin: auto;
+    font-size: 15px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px outset maroon;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+button:active {
+    background-color: grey;
+    transition: .1s;
+}
+
+#endmessage {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1060px) {
+    #timer {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .container {
+        width: 80%;
+    }
+}

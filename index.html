@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Timer</h1>
+    <div class="container">
+        <br><br>
+        <form>
+            <div>
+                <label for="hours">Hours:</label>
+                <input id="hours" type="number" min="0">
+            </div>
+            <div>
+                <label for="minutes">Minutes:</label>
+                <input id="minutes" type="number" min="0" max="59">
+            </div>
+            <div>
+                <label for="seconds">Seconds:</label>
+                <input id="seconds" type="number" min="0" max="59">
+            </div>
+        </form>
+        <div id="timer">
+            00:00:00
+        </div>
+        <div class="buttons">
+            <button id="startStopBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <p id="endmessage"></p>
+        <audio src="bassboostedandroid.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
