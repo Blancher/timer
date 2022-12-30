@@ -54,11 +54,9 @@ function stopWatch() {
             displayTimer.textContent = `${hours}:${minutes}:${seconds}`;
         }
     } else {
+        startStopBtn.disabled = true;
         endMessage.textContent = 'Your timer is over.';
         document.querySelector('audio').play();
-    }
-    if (displayTimer.textContent === '00:00:00') {
-        startStopBtn.disabled = true;
     }
 }
 
