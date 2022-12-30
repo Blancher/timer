@@ -33,7 +33,6 @@ function addZeroes(time) {
         return `0${time}`;
     }
 }
-
 function stopWatch() {
     if (hours >= 0) {
         seconds--;
