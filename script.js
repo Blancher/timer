@@ -62,8 +62,8 @@ function stopWatch() {
 // Event listeners
 
 startStopBtn.addEventListener('click', () => {
-    seconds = valueAssigner(domSeconds.value, seconds);
-    minutes = valueAssigner(domMinutes.value, minutes);
+    seconds = valueAssigner(domSeconds.value % 60, seconds);
+    minutes = valueAssigner(domMinutes.value % 60, minutes);
     hours = valueAssigner(domHours.value, hours);
     domSeconds.value = "";
     domMinutes.value = "";
